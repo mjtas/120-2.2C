@@ -1,0 +1,155 @@
+/* Importing base styles from another CSS file */
+@import './base.css';
+
+/* Styling for the root application container */
+#app {
+  margin: 0 auto; /* Centre the content horizontally */
+}
+
+/* Styling for the main content section */
+.main {
+  display: flex;
+  justify-content: center; /* Centre content horizontally */
+  align-items: center; /* Centre content vertically */
+  flex-grow: 1; /* Allow content to grow to fill available space */
+}
+
+/* Styling for the main content container */
+.main-container {
+  max-width: 960px; /* Maximum width for the content container */
+  width: 100%; /* Allow container to take full width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  flex-grow: 1; /* Allow container to grow to fill available space */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Center content horizontally */
+  background-color: #186A3B; /* Background color for main container */
+  background-color: rgba(255,255,255,0.25); /* Background color with transparency */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+}
+
+/* Styling for the main heading section */
+.main-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  gap: 16px; /* Gap between heading elements */
+  margin-top: 48px; /* Top margin for the heading section */
+  margin-bottom: 24px; /* Bottom margin for the heading section */
+}
+
+/* Styling for the other main content sections */
+.main-other {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly */
+  gap: 72px; /* Gap between content sections */
+}
+
+/* Styling for the left side of main content */
+.main-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Centre content vertically */
+}
+
+/* Styling for the right side of main content */
+.main-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+}
+
+/* Styling for main text content */
+.main-text {
+  list-style-type: none; /* Remove list style from main text */
+  margin: 0;
+  margin-top: 34px;
+  padding: 12px;
+  font-size: 18px;
+  text-align: justify; /* Justify text alignment */
+  background-color: white; /* Background color for text content */
+  background-color: rgba(255,255,255,0.5); /* Background color with transparency */
+  color: black;
+}
+
+/* Styling for main list items */
+.main-li {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+/* Styling for different heading levels */
+h1 {
+  font-family: 'playfair_display_scbold', 'Georgia', serif; 
+  font-size: 48px;
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Styling for workshop content section */
+.content {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Centre content horizontally */
+}
+
+/* Styling for button with class button1 */
+.button1 {
+  border: none;
+  width: 100px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* Media query for screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+  .main-other {
+    flex-direction: column; /* Stack content vertically */
+    gap: 24px; /* Adjust spacing between sections */
+  }
+
+  .main-left,
+  .main-right {
+    width: 100%; /* Take up full width on smaller screens */
+  }
+
+  .main-heading {
+    margin-top: 24px; /* Reduce top margin for smaller screens */
+  }
+
+  h1, h2 {
+    font-size: 36px;
+  }
+}
+
+/* Media query for screens between 768px and 1023px (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-other {
+    gap: 48px; /* Adjust spacing between sections */
+  }
+}

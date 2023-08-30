@@ -1,0 +1,60 @@
+ /* Note - component will be used in workshop page (future task) */
+ /* EOI section styling */
+ button,
+ input {
+   font-family: inherit;
+   font-size: 100%;
+ }
+ 
+ .interest-form {
+   position: relative;
+   margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ input {
+   width: 150px;
+   padding: 8px;
+   margin: 0;
+   margin-bottom: 12px;
+   box-sizing: border-box;
+ }
+ 
+ /* Checkbox styling */
+ fieldset {
+    margin-bottom: 18px;
+    width: 70%;
+ }
+ 
+ input[type="checkbox"] {
+   appearance: none;
+   position: relative;
+   width: 1em;
+   height: 1em;
+   border: 1px solid gray;
+   vertical-align: -12px;
+   margin-left: 10px;
+   margin-right: 6px;
+   /* Green colour for customised checkmark */
+   color: #28a745;
+   padding: 0;
+ }
+ 
+ 
+ input[type="checkbox"]::before {
+   /* Customised checkmark */
+   content: "✔";
+   position: absolute;
+   font-size: 1.2em;
+   right: -1px;
+   top: -0.3em;
+   /* Hiding checkmark when not checked */
+   visibility: hidden;
+ }
+ 
+ input[type="checkbox"]:checked::before {
+   /* Showing checkmark when checked */
+   visibility: visible;
+ }
+ 
